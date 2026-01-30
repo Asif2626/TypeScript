@@ -1,7 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function calculateTotal(items) {
-    return items.reduce(function (sum, price) { return sum + price; }, 0);
+    return items.reduce((sum, price) => sum + price, 0);
 }
-var order = {
+const order = {
     id: 101,
     items: [100, 200, 50],
     total: calculateTotal([100, 200, 50]),
@@ -11,9 +13,9 @@ function addUser(users, user) {
     users.push(user);
 }
 function getActiveUsers(users) {
-    return users.filter(function (user) { return user.isActive; });
+    return users.filter((user) => user.isActive);
 }
-var users = [];
+const users = [];
 addUser(users, {
     id: 1,
     name: "Asif",
@@ -40,3 +42,4 @@ addUser(users, {
 });
 console.log("All Users:", users);
 console.log("Active Users:", getActiveUsers(users));
+//# sourceMappingURL=Challenges.js.map
