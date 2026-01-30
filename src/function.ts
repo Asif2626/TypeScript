@@ -30,3 +30,9 @@ function applyDiscount(price: number, discount: number): number {
   return finalPrice;
 }
 console.log(applyDiscount(150, 50));
+
+function calculateTax(income: number, taxYear?: number): number {
+  if ((taxYear || 2022) < 2022) return income * 0.2;
+  return income * 0.3;
+}
+console.log(calculateTax(10000, 2022));

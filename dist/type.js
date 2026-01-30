@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function getUserName(user) {
-  return user;
+    return user;
 }
 const user1 = { id: 1, name: "Asif" };
 console.log(getUserName(user1));
